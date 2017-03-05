@@ -7,8 +7,7 @@ const webpackMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
 const config = require('./webpack.config.js');
 
-const isDevelopment = process.env.NODE_ENV !== 'production';
-const port = isDevelopment ? 3000 : process.env.PORT;
+const port =  process.env.PORT || 3000;
 const app = express();
 
 var users = require('./routes/users');
