@@ -30,7 +30,7 @@ class Login extends Component {
 			     		},
 			     		body: JSON.stringify(userData)
 			   		};
-               		fetch('http://'+Config.default.host+'/users/addOrUpdate', options)
+               		fetch('https://'+Config.default.host+'/users/addOrUpdate', options)
                		.then(response => {
 			      		if(response.status == 200) {
 			      			response.json().then(json => {

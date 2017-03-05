@@ -1,3 +1,3 @@
 export default {
-	"host" : "localhost:3000"
+	"host" : "test-apprachna.herokuapp.com"
 }
