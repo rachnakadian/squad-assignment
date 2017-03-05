@@ -1,3 +1,3 @@
 export default {
-	"host" : "test-apprachna.herokuapp.com"
+	"host" : "https://test-apprachna.herokuapp.com"
 }

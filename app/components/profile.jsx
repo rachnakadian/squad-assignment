@@ -26,7 +26,7 @@ class Profile extends React.Component {
 		       	'Content-Type': 'application/json'
      		}
    		};
-		fetch('https://'+Config.default.host+'/users/'+email, options)
+		fetch(Config.default.host+'/users/'+email, options)
 		.then(response => {
       		if(response.status == 200) {
       			response.json().then(json => {
