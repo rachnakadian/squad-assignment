@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-
+import * as Config from '../config.js';
+console.log("..config is",Config);
 class Login extends Component {
 	constructor(props) {
 		super(props);
@@ -29,7 +30,7 @@ class Login extends Component {
 			     		},
 			     		body: JSON.stringify(userData)
 			   		};
-               		fetch('http://localhost:3000/users/addOrUpdate', options)
+               		fetch('http://'+Config.default.host+'/users/addOrUpdate', options)
                		.then(response => {
 			      		if(response.status == 200) {
 			      			response.json().then(json => {
