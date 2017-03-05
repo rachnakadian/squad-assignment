@@ -1,4 +1,5 @@
 import React from 'react';
+import * as Config from '../config.js';
 
 class Profile extends React.Component {
 	constructor(props) {

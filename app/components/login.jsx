@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import * as Config from '../config.js';
-console.log("..config is",Config);
 class Login extends Component {
 	constructor(props) {
 		super(props);
