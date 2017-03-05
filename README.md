@@ -14,7 +14,8 @@ To setup and run locally
 
 3) For configuring MongoDB , set mongourl in config.js file in the root directory
 
-4) run following command 
+4) Run following command 
+
 	> npm start
 
 5) It will run your server by default on http://localhost:3000
