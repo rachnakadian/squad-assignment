@@ -39,11 +39,11 @@ class Profile extends React.Component {
       			});
       		} else {
       			response.json().then(json => {
-      				that.setState({error: json.message});
+      				this.setState({error: json.message});
       			});
       		}
       	}).catch(err => {
-      		that.setState({error: 'Sorry! user record is not updated.'});
+      		this.setState({error: 'Sorry! user record is not updated.'});
       	});
 	}
 	logout(e) {
