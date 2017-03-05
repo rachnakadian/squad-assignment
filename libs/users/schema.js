@@ -1,5 +1,7 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/myApp');
+var config = require('../../config.js');
+console.log("...",config.mongo.dbUrl)
+mongoose.connect('mongodb://'+config.mongo.dbUrl);
 var schema = mongoose.Schema;
 var uniqueValidator = require('mongoose-unique-validator');
 
