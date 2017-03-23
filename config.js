@@ -1,5 +1,5 @@
 module.exports = {
 	mongo : {
-		"dbUrl" : "<db_path_here>"
+		"dbUrl" : "testuser:test2169@ds119250.mlab.com:19250/mydb"
 	}
 }
